@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LocationFinder</string>
+    <string name="action_settings">Settings</string>
+    <string name="bluetooth_button">Bluetooth Mode</string>
+    <string name="wifi_button">WI-FI Mode</string>
+    <string name="beepbeep_button">BeepBeep Button</string>
+    <string name="bluetooth_server">Act as server</string>
+    <string name="bluetooth_client">Connect</string>
+    <string name="setting_methods_key">setting_methods</string>
+
+</resources>
