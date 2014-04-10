@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
-    <ListPreference android:entries="@array/measure_method" android:dialogTitle="Measurement Methods" android:entryValues="@array/measure_method_values" android:dialogMessage="Select method" android:key="@string/setting_methods_key" android:enabled="true" android:summary="Measurement Method" android:title="Measurement Method"/>
+    <ListPreference android:entries="@array/measure_method" android:dialogTitle="Select Method" android:entryValues="@array/measure_method_values" android:key="@string/method_list_key" android:title="@string/settings_method_title" android:summary="Select Method"/>
     
 
 </PreferenceScreen>

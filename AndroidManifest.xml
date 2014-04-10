@@ -5,9 +5,17 @@
     android:versionName="1.0" >
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="18" />
 
     <application
@@ -24,11 +32,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.mcgill.locationfinder.bluetooth.BluetoothPairedList" >
+        <activity 
+            android:name="com.mcgill.locationfinder.bluetooth.BluetoothPairedList" 
+            android:parentActivityName="com.mcgill.locationfinder.StartActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mcgill.locationfinder.StartActivity"/>
+        </activity>
+        <activity 
+            android:name="com.mcgill.locationfinder.SettingsActivity" 
+            android:parentActivityName="com.mcgill.locationfinder.StartActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mcgill.locationfinder.StartActivity"/>
         </activity>
         <activity
-            android:name="com.mcgill.locationfinder.SettingsActivity"
-            android:label="@string/title_activity_settings" >
+            android:name="com.mcgill.locationfinder.MeasurementActivity"
+            android:label="@string/title_activity_measurement" 
+            android:parentActivityName="com.mcgill.locationfinder.StartActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mcgill.locationfinder.StartActivity"/>
         </activity>
     </application>
 
